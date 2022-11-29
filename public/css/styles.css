@@ -1,0 +1,80 @@
+
+body {
+  background-color: #E8ECEF;
+}
+
+.centered {
+    padding-top: 200px;
+    text-align: center;
+}
+
+.secret-text {
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+  background-color: #0a5b29;
+}
+
+.edit-container{
+  width: 80%;
+  border: 1px solid grey;
+  border-radius: 10px;
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-between
+
+}
+
+
+h1{
+  margin-top: 20px;
+  margin-left: 20px;
+  font-size: 1rem;
+}
+.edit-text{
+  background-color: rgb(218, 205, 205);
+  padding: 1em;
+  border: 1px solid grey;
+  font-weight: bold;
+}
+
+.secret-edit{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-edit{
+  width: 50%;
+  display: flex;
+  justify-content:flex-end;
+}
+
+.edit-try input{
+  width: 100%;
+  padding: 0.5rem;
+  /* gap: 10px; */
+}
+.form-edit button{
+  /* padding: 1.em; */
+  font-weight: bold;
+}
+
+.edit-try{
+  display: none;
+  
+}
+
+.edit-try span{
+  background-color: red;
+  color: white;
+  padding: 10px;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+.show{
+  display: flex;
+  position: relative;
+  right: 120px;
+}

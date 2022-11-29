@@ -1,0 +1,27 @@
+<%- include('partials/header') %>
+
+  <!-- <form action="/edit" method="POST">
+
+    <div class="form-group">
+      <input type="text" class="form-control text-center" name="secret" placeholder="Edit text" >
+    </div>
+    <button type="submit" class="btn btn-dark">Submit</button>
+</form> -->
+
+
+  <%edits.forEach((item)=>{%>
+    <div class="edit-container">
+      <div class="text-edit">
+        <h1>Text to edit: <span class="edit-text">
+            <%= item.secret %></span>
+        </h1>
+      </div><br><br>
+
+      <form action="/edit" method="post" class="edit-form">
+
+        <textarea name="edit" id="" cols="50" rows="10" placeholder="enter new text" ></textarea><br>
+        <button type="submit" class="btn" name="deletebtn" value="<%= item._id %>" style="background-color: gold;">Update</button>
+      </form>
+    </div>
+
+    <%})%>
