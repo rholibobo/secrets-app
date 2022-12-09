@@ -31,7 +31,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 // SCHEMA
-mongoose.connect("mongodb://0.0.0.0:27017/user_authDB");
+mongoose.connect(process.env.MONGODB_URL || "mongodb://0.0.0.0:27017/user_authDB");
 mongoose.connection
   .once("open", () => console.log("Connected"))
   .on("error", (err) => console.log(err));
