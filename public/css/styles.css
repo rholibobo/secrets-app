@@ -31,7 +31,7 @@ h1{
   margin-left: 20px;
   font-size: 1rem;
 }
-.edit-text{
+.edit_text{
   background-color: rgb(218, 205, 205);
   padding: 1em;
   border: 1px solid grey;
@@ -62,7 +62,6 @@ h1{
 
 .edit-try{
   display: none;
-  
 }
 
 .edit-try span{
@@ -77,4 +76,46 @@ h1{
   display: flex;
   position: relative;
   right: 120px;
+}
+footer{
+  text-align: center;
+}
+
+@media screen and (max-width:600px) {
+  .google{
+    margin-top: 40px;
+    /* background-color: red; */
+  }
+  .sec-text{
+    font-size: 4rem;
+    text-align: center;
+  }
+  .secret-text{
+    font-size: 1.7rem;
+  }
+  .form-edit{
+    width: 100%;
+    /* display: inline-block; */
+  }
+  .form-edit .edit-try #edit-text{
+    width: 100%;
+  }
+  .secret-edit{
+    /* justify-content: space-between; */
+    width: 100%;
+    
+  }
+  .edit-try{
+    
+  }
+  .show{
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    right: 30px;
+    width: 80%;
+    margin: 0 auto;
+    /* height: 20vh; */
+  }
+
 }
