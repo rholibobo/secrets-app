@@ -93,6 +93,9 @@ footer{
   .secret-text{
     font-size: 1.2rem;
   }
+  .time-text{
+    font-size: 0.9rem;
+  }
   .form-edit{
     width: 100%;
     /* display: inline-block; */
@@ -116,6 +119,15 @@ footer{
     width: 80%;
     margin: 0 auto;
     /* height: 20vh; */
+  }
+  .btn{
+    padding: 0.3rem;
+    color: white;
+
+  }
+  .btn1{
+    color: black;
+    border: 1px solid black;
   }
 
 }
